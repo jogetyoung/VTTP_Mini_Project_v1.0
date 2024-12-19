@@ -73,6 +73,10 @@
     <div th:if="${cards.size() == 0}">
         <p class="text-danger">No cards found for your search term.</p>
     </div>
+
+    <div class="mt-4">
+        <a th:href="@{/search}" class="btn btn-secondary">Back to Search</a>
+    </div>
 </div>
 </body>
 </html>
