@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Search Results</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-5">
+    <h1>Search Results</h1>
+
+    <!-- Check if there are results -->
+    <div th:if="${cards.size() > 0}">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col" th:each="card : ${cards}">
+                <div class="card h-100">
+                    <img th:src="${card.images.small}" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <h5 class="card-title" th:text="${card.name}">Card Name</h5>
+                        <p class="card-text">
+                            Type: <span th:text="${#strings.arrayJoin(card.types, ', ')}">Type</span><br>
+                            Rarity: <span th:text="${card.rarity}">Rarity</span><br>
+                            Set: <span th:text="${card.set.name}">Set</span>
+                        </p>
+
+                        <!-- Add View Details Button Here -->
+                        <a th:href="@{/cards/{id}(id=${card.id})}" class="btn btn-primary mt-2">View Details</a>
+
+                        <!-- Add to Favorites Button -->
+                        <form th:action="@{/favorites/add}" method="post">
+                            <input type="hidden" name="id" th:value="${card.id}">
+                            <button type="submit" class="btn btn-success mt-2">Add to Favorites</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination Navigation -->
+        <nav class="mt-4">
+            <ul class="pagination justify-content-center">
+
+                <!-- Previous Button -->
+                <li class="page-item" th:classappend="${currentPage == 1} ? 'disabled'">
+                    <a class="page-link"
+                       th:href="@{/cards/search(name=${name}, set=${set}, type=${type}, rarity=${rarity}, page=${currentPage - 1}, pageSize=${pageSize})}"
+                       th:attr="aria-disabled=${currentPage == 1}">
+                        Previous
+                    </a>
+                </li>
+
+                <!-- Page Number Display -->
+                <li class="page-item disabled">
+                    <a class="page-link">
+                        Page <span th:text="${currentPage}"></span> of <span th:text="${totalPages}"></span>
+                    </a>
+                </li>
+
+                <!-- Next Button -->
+                <li class="page-item" th:classappend="${currentPage == totalPages} ? 'disabled'">
+                    <a class="page-link"
+                       th:href="@{/cards/search(name=${name}, set=${set}, type=${type}, rarity=${rarity}, page=${currentPage + 1}, pageSize=${pageSize})}"
+                       th:attr="aria-disabled=${currentPage == totalPages}">
+                        Next
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </div>
+
+    <!-- If No Cards Found -->
+    <div th:if="${cards.size() == 0}">
+        <p class="text-danger">No cards found for your search term.</p>
+    </div>
+</div>
+</body>
+</html>
