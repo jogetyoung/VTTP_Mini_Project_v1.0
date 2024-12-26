@@ -2,9 +2,9 @@ package com.example.Pokemon_TCG_TEST.Model;
 
 import java.util.List;
 
-public class SetResponse {
+public class SetResponse { // acts as the API response for fetching the pokemon card sets
 
-    private List<SetDetails> data;  // Correct reference if SetDetails is nested
+    private List<SetDetails> data;  // List of Set Details from API
 
     // Getter and Setter
     public List<SetDetails> getData() {
@@ -17,8 +17,8 @@ public class SetResponse {
 
     // Nested Class for Set Details
     public static class SetDetails {
-        private String id;   // Set ID
-        private String name; // Set Name
+        private String id;   // the ID of the Pokemon Set (e.g. ex4)
+        private String name; // the name of the set (e.g. Team Rocket)
 
         // Getters and Setters
         public String getId() {
