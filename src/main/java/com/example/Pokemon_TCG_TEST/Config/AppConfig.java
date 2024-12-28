@@ -95,6 +95,7 @@ public class AppConfig {
         return redisTemplate;
     }
 
+    //custom template to handle Card object directly
     @Bean("redis-template-card")
     public RedisTemplate<String, Card> createRedisTemplateForCard() {
         RedisStandaloneConfiguration config = new RedisStandaloneConfiguration(redisHost, redisPort);

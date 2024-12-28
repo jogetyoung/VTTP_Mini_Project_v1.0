@@ -1,0 +1,183 @@
+/* General Styles */
+body {
+    background-color: #f4f4f9;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1f2937;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensure space between left and right sections */
+    position: relative;
+}
+
+/* h1 remains centered */
+header h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Container for right-side action buttons */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between buttons */
+}
+
+/* Favorites button */
+.btn-favorites {
+    background-color: #fbbf24;
+    color: #1f2937;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-favorites:hover {
+    background-color: #f59e0b;
+    color: #fff;
+}
+
+/* Logout button */
+.btn-logout {
+    background-color: #ef4444;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-logout:hover {
+    background-color: #dc2626;
+}
+
+/* API Button Styles */
+.btn-api {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #d1d5db;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-api:hover {
+    background-color: #d1d5db;
+    color: #000000;
+}
+
+/* Search Container */
+.search-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-control, .form-select {
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.search-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Action Buttons */
+.action-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.action-buttons a,
+.action-buttons form button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Search Container */
+.search-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-control, .form-select {
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.search-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Action Buttons */
+.action-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.action-buttons a,
+.action-buttons form button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}

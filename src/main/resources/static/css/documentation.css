@@ -1,0 +1,171 @@
+/* General Body Styles */
+body {
+    background-color: #f9f9f9;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #1f2937;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Left-Aligned "Home" Button */
+.btn-home {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #d1d5db;
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 10px;
+}
+
+.btn-home:hover {
+    background-color: #d1d5db;
+    color: #000000;
+}
+
+/* Centered Title */
+header h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Right-Aligned Buttons Container */
+.header-actions {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+    align-items: center;
+}
+
+/* API Button Styles */
+.btn-api {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #d1d5db;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-api:hover {
+    background-color: #d1d5db;
+    color: #000000;
+}
+
+/* Favorites Button */
+.btn-favorites {
+    background-color: #fbbf24;
+    color: #1f2937;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-favorites:hover {
+    background-color: #f59e0b;
+    color: #fff;
+}
+
+/* Logout Button */
+.btn-logout {
+    background-color: #ef4444;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-logout:hover {
+    background-color: #dc2626;
+}
+
+/* Container Styling */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Styling */
+h2 {
+    font-size: 2.5rem;
+    color: #d23669;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 40px;
+}
+
+section h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+section p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+section ul {
+    list-style: disc inside;
+    margin-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+/* Code Block Styling */
+pre {
+    background-color: #f8f9fa;
+    color: #212529;
+    border: 1px solid #dee2e6;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    overflow-x: auto;
+    white-space: pre-wrap;
+}
+
+/* Link Styling Inside Code */
+pre a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+pre a:hover {
+    text-decoration: underline;
+}

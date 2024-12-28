@@ -1,0 +1,88 @@
+body {
+    background: linear-gradient(to bottom, #1c1f24, #0f1012); /* Dark gradient */
+    font-family: 'Poppins', sans-serif;
+    color: #eaeaea;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-container {
+    background: #292d33; /* Dark container background */
+    border-radius: 20px;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.register-header {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffcb05; /* Pokémon Yellow */
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #eaeaea; /* Light text for dark mode */
+}
+
+input {
+    background-color: #1c1f24; /* Input background */
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+input:focus {
+    border-color: #ffcb05; /* Highlighted border */
+    box-shadow: 0 0 6px rgba(255, 203, 5, 0.5);
+}
+
+.btn-register {
+    background-color: #ffcb05; /* Pokémon Yellow */
+    color: #1c1f24; /* Dark text on yellow */
+    border: none;
+    border-radius: 20px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-register:hover {
+    background-color: #f5b700;
+}
+
+.btn-login {
+    margin-top: 15px;
+    display: inline-block;
+    color: #ffcb05;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.btn-login:hover {
+    color: #f5b700;
+    text-decoration: underline;
+}
+
+.error-message {
+    background-color: #ff5252;
+    color: white;
+    font-size: 0.9rem;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}

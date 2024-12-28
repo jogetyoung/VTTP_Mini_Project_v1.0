@@ -1,4 +1,4 @@
-package com.example.Pokemon_TCG_TEST.Model;
+package com.example.Pokemon_TCG_TEST.Utilities;
 
 import java.util.List;
 

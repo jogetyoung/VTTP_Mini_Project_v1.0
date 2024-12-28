@@ -1,10 +1,10 @@
-package com.example.Pokemon_TCG_TEST.Model;
+package com.example.Pokemon_TCG_TEST.Utilities;
 
 import java.util.List;
 
-public class RarityResponse {
+public class RarityResponse { // acts as the response from the API for a list of card rarities
 
-    private List<String> data;  // This matches the API's expected response
+    private List<String> data;  // list of card rarities returned by API
 
     public List<String> getData() {
         return data;
@@ -14,3 +14,17 @@ public class RarityResponse {
         this.data = data;
     }
 }
+
+//example of the rarities data
+
+//{
+//        "data": [
+//        "Common",
+//        "Uncommon",
+//        "Rare",
+//        "Rare Holo",
+//        "Ultra Rare",
+//        "Secret Rare",
+//        "Promo"
+//        ]
+//        }

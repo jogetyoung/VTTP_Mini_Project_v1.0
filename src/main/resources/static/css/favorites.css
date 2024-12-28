@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #1f2937;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Left Aligned "Home" Button */
+.btn-home {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #d1d5db;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-home:hover {
+    background-color: #d1d5db;
+    color: #000000;
+}
+
+/* Centered Title */
+header h1 {
+    flex-grow: 1;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap; /* Prevents the title from wrapping */
+}
+
+/* Right-Aligned Buttons Container */
+.header-actions {
+    display: flex;
+    gap: 10px; /* Adds spacing between buttons */
+    align-items: center;
+    margin-left: auto; /* Ensures buttons align to the right */
+}
+
+/* API Button Styles */
+.btn-api {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #d1d5db;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-api:hover {
+    background-color: #d1d5db;
+    color: #000000;
+}
+
+/* Favorites Button */
+.btn-favorites {
+    background-color: #fbbf24;
+    color: #1f2937;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-favorites:hover {
+    background-color: #f59e0b;
+    color: #fff;
+}
+
+/* Logout Button */
+.btn-logout {
+    background-color: #ef4444;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-logout:hover {
+    background-color: #dc2626;
+}
+
+/* Container Styling */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Title */
+h2 {
+    font-size: 2.5rem;
+    color: #dc3545;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Card Container Styling */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center-align cards */
+}
+
+.card-container.single-card {
+    justify-content: center; /* Center a single card */
+}
+
+/* Card Styling */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    max-width: 300px; /* Restrict card width */
+    flex: 1 1 calc(300px); /* Flex for consistent card size */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    color: #dc3545;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #0056b3;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #c82333;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #a71d2a;
+}
+
+/* Alerts */
+.alert {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Back to Search Button */
+.back-to-search {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.btn-secondary {
+    margin-right: 10px;
+}

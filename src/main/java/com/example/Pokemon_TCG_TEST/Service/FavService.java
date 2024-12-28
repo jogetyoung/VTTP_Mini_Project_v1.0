@@ -9,12 +9,14 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+//redundant after creating UserService so that it is saved to each individual user account
+
 @Service
 public class FavService {
 
     @Autowired
     @Qualifier("redis-template-card")
-    private RedisTemplate<String, Card> redisTemplate;
+    private RedisTemplate<String, Card> redisTemplate; // handles storing and retrieving Card objects from Redis
 
     private static final String FAVORITES_KEY = "favorites";
 

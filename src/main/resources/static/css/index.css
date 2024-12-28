@@ -1,0 +1,187 @@
+/* General Body Styling */
+body {
+    background: linear-gradient(to bottom, #1c1f24, #0f1012); /* Dark gradient */
+    font-family: 'Poppins', sans-serif;
+    color: #eaeaea;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #1f2937; /* Dark header background */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: fixed; /* Fix header to the top of the page */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it appears above other elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
+}
+
+/* Left-Aligned "Home" Button */
+.btn-home {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #d1d5db;
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 10px;
+}
+
+.btn-home:hover {
+    background-color: #d1d5db;
+    color: #000000;
+}
+
+/* Centered Title */
+header h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Right-Aligned Buttons Container */
+.header-actions {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+    align-items: center;
+}
+
+/* API Button Styles */
+.btn-api {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #d1d5db;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-api:hover {
+    background-color: #d1d5db;
+    color: #000000;
+}
+
+/* Favorites Button */
+.btn-favorites {
+    background-color: #fbbf24;
+    color: #1f2937;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-favorites:hover {
+    background-color: #f59e0b;
+    color: #fff;
+}
+
+/* Logout Button */
+.btn-logout {
+    background-color: #ef4444;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-logout:hover {
+    background-color: #dc2626;
+}
+
+/* Login Container Styling */
+.login-container {
+    background: #292d33; /* Dark container background */
+    border-radius: 20px;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin: 120px auto; /* Ensure it doesn't overlap the header */
+}
+
+/* Login Header */
+.login-header {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffcb05; /* Pokémon Yellow */
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #eaeaea; /* Light text for dark mode */
+}
+
+input {
+    background-color: #1c1f24; /* Input background */
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+input:focus {
+    border-color: #ffcb05; /* Highlighted border */
+    box-shadow: 0 0 6px rgba(255, 203, 5, 0.5);
+}
+
+.btn-login {
+    background-color: #ffcb05; /* Pokémon Yellow */
+    color: #1c1f24; /* Dark text on yellow */
+    border: none;
+    border-radius: 20px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #f5b700;
+}
+
+.btn-register {
+    margin-top: 15px;
+    display: inline-block;
+    color: #ffcb05;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.btn-register:hover {
+    color: #f5b700;
+    text-decoration: underline;
+}
+
+.error-message {
+    background-color: #ff5252;
+    color: white;
+    font-size: 0.9rem;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}

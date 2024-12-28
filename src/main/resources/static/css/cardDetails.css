@@ -6,6 +6,98 @@ body {
     padding: 0;
 }
 
+header {
+    background-color: #1f2937;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Left-Aligned "Home" Button */
+.btn-home {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #d1d5db;
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 10px;
+}
+
+.btn-home:hover {
+    background-color: #d1d5db;
+    color: #000000;
+}
+
+/* Centered Title */
+header h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Right-Aligned Button Container */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Consistent spacing between buttons */
+}
+
+/* API Button Styles */
+.btn-api {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #d1d5db;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-api:hover {
+    background-color: #d1d5db;
+    color: #000000;
+}
+
+/* Favorites Button */
+.btn-favorites {
+    background-color: #fbbf24;
+    color: #1f2937;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-favorites:hover {
+    background-color: #f59e0b;
+    color: #fff;
+}
+
+/* Logout Button */
+.btn-logout {
+    background-color: #ef4444;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-logout:hover {
+    background-color: #dc2626;
+}
+
 /* Container Styling */
 .container {
     max-width: 1200px;
@@ -17,7 +109,7 @@ body {
 }
 
 /* Heading Styling */
-h1 {
+h2 {
     font-size: 2.5rem;
     color: #d23669;
     text-align: center;
@@ -85,6 +177,10 @@ h1 {
     border-color: #6c757d;
 }
 
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
 .btn-warning {
     background-color: #ffc107;
     border-color: #ffc107;
@@ -94,8 +190,4 @@ h1 {
 .btn-warning:hover {
     background-color: #e0a800;
     color: #fff;
-}
-
-.btn-secondary:hover {
-    background-color: #5a6268;
 }
