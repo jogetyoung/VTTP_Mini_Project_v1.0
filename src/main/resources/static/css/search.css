@@ -15,6 +15,23 @@ header {
     position: relative;
 }
 
+.btn-home {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #d1d5db;
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 10px;
+}
+
+.btn-home:hover {
+    background-color: #d1d5db;
+    color: #000000;
+}
+
 /* h1 remains centered */
 header h1 {
     position: absolute;
@@ -33,6 +50,7 @@ header h1 {
     align-items: center;
     gap: 10px; /* Space between buttons */
 }
+
 
 /* Favorites button */
 .btn-favorites {

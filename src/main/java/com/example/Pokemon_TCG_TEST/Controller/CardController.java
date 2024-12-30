@@ -10,6 +10,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.Collections;
 import java.util.Comparator;
@@ -94,14 +95,18 @@ public class CardController {
             @RequestParam(required = false) String rarity,
             @RequestParam(defaultValue = "1") int page,
             @RequestParam(defaultValue = "12") int pageSize,
+            RedirectAttributes redirectAttributes,
             HttpSession session,
             Model model
     ) {
 
         //check if user is logged in, if not then redirect to login page to either login or register
         if (session.getAttribute("user") == null) {
+            redirectAttributes.addFlashAttribute("error", "You need to be logged in to view full card details.");
             return "redirect:/";
         }
+
+
 
         //fetch card details by it's id
         Card card = cardService.getCardById(id);

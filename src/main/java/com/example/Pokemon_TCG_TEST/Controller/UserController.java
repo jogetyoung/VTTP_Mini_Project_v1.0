@@ -53,8 +53,12 @@ public class UserController {
 
 
     @GetMapping("/register")
-    public String showRegisterPage(Model model) {
+    public String showRegisterPage(HttpSession session,Model model) {
         model.addAttribute("user", new User());
+
+        if (session.getAttribute("user") != null) {
+            return "redirect:/search";
+        }
         return "register";
     }
 
@@ -69,6 +73,8 @@ public class UserController {
             model.addAttribute("error", "Invalid registration details. Please correct the errors.");
             return "register"; // Return to the registration page with validation errors
         }
+
+
 
         try {
             // Register the user

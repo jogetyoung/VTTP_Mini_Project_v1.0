@@ -23,8 +23,8 @@ public class FavController {
     @Autowired
     private CardService cardService; // To fetch cards from API
 
-    @Autowired
-    private FavService favService; // To handle favorites logic (redundant)
+//    @Autowired
+//    private FavService favService; // To handle favorites logic (redundant)
 
     @Autowired
     private UserService userService;

@@ -92,20 +92,6 @@ header h1 {
     color: #fff;
 }
 
-/* Logout Button */
-.btn-logout {
-    background-color: #ef4444;
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    border: none;
-}
-
-.btn-logout:hover {
-    background-color: #dc2626;
-}
-
 /* Login Container Styling */
 .login-container {
     background: #292d33; /* Dark container background */
@@ -184,4 +170,26 @@ input:focus {
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 10px;
+}
+
+/* Footer Styling */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #eaeaea;
+    font-size: 0.9rem;
+    background-color: transparent; /* Ensure it matches the body */
+}
+
+.footer-link {
+    color: #ffcb05; /* Pokémon Yellow */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    color: #f5b700;
 }

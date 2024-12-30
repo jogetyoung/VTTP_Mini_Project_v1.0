@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
-//redundant after creating UserService so that it is saved to each individual user account
+//redundant after creating UserService, so that it is saved to each individual user account
 
 @Service
 public class FavService {
